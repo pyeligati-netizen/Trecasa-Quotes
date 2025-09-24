@@ -1,0 +1,45 @@
+{
+  "project_name": "Trecasa Modernization",
+  "agreement_date": "2024-03-15",
+  "client": {
+    "name": "Acme Holdings",
+    "contact": "Jamie Rivera"
+  },
+  "scope_of_work": [
+    "Design and build responsive landing pages",
+    "Implement CRM integration",
+    "Provide analytics dashboard setup"
+  ],
+  "project_timeline": {
+    "kickoff": "2024-04-01",
+    "completion": "2024-06-30"
+  },
+  "pricing": {
+    "total": 48000,
+    "deposit": 12000,
+    "installments": [
+      {
+        "due": "2024-05-01",
+        "amount": 18000
+      },
+      {
+        "due": "2024-06-01",
+        "amount": 18000
+      }
+    ]
+  },
+  "deliverables": [
+    {
+      "title": "Discovery Workshop",
+      "description": "Stakeholder interviews and requirements alignment"
+    },
+    {
+      "title": "Experience Design",
+      "description": "Wireframes and hi-fidelity mockups for approval"
+    },
+    {
+      "title": "Implementation",
+      "description": "Development, QA, and production launch support"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=65.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "trecasa-quotes"
+version = "0.1.0"
+description = "Dynamic agreement generator for Trecasa"
+authors = [
+  { name = "Trecasa", email = "info@trecasa.com" }
+]
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+]
+dependencies = []
+
+[project.scripts]
+trecasa-agreement = "trecasa_quotes.cli:main"
+

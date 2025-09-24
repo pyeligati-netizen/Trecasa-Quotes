@@ -1,0 +1,93 @@
+{
+  "title": "{{ project_name }} Services Agreement",
+  "organization": "Trecasa",
+  "sections": [
+    {
+      "heading": "Parties",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "This Services Agreement (\"Agreement\") is entered into on {{ agreement_date }} between {{ client.name }} (\"Client\") and {{ organization }} (\"Provider\")."
+        }
+      ]
+    },
+    {
+      "heading": "Engagement Overview",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Provider will deliver the following scope of work:"
+        },
+        {
+          "type": "bullets",
+          "each": "scope_of_work",
+          "template": "{{ item }}"
+        },
+        {
+          "type": "paragraph",
+          "text": "Project kickoff is targeted for {{ project_timeline.kickoff }} with an expected completion by {{ project_timeline.completion }}."
+        }
+      ]
+    },
+    {
+      "heading": "Investment",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "The total investment for this engagement is {{ pricing.total | currency }}."
+        },
+        {
+          "type": "paragraph",
+          "text": "A deposit of {{ pricing.deposit | currency }} is due upon signing."
+        }
+      ]
+    },
+    {
+      "heading": "Financing Options",
+      "when": "pricing.installments",
+      "content": [
+        {
+          "type": "bullets",
+          "each": "pricing.installments",
+          "template": "{{ item.due }}: {{ item.amount | currency }}"
+        }
+      ]
+    },
+    {
+      "heading": "Deliverables",
+      "content": [
+        {
+          "type": "numbered",
+          "each": "deliverables",
+          "template": "{{ item.title }} – {{ item.description }}"
+        }
+      ]
+    },
+    {
+      "heading": "Approvals",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Client approvals will be coordinated through {{ client.contact }}."
+        },
+        {
+          "type": "paragraph",
+          "text": "All change requests must be submitted in writing."
+        }
+      ]
+    },
+    {
+      "heading": "Signatures",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Provider Representative: ________________________  Date: ____________"
+        },
+        {
+          "type": "paragraph",
+          "text": "Client Representative: {{ client.name }}          Date: ____________"
+        }
+      ]
+    }
+  ]
+}
